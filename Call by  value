@@ -1,0 +1,27 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+public class Program 
+    { 
+    	void show(   int x)
+    	{ 
+    		x=10;
+    	Console.WriteLine(x);
+    	}
+    	
+        public static void Main()
+        {
+			int x=20; 
+			Program p1=new Program();
+			Console.WriteLine("Before the function call"+x);
+         p1.show(  x);
+       Console.WriteLine("After the calling function"+x);
+        	
+        }
+    }
+}
